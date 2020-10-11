@@ -34,4 +34,8 @@ class SubInteractiveFigure(InteractiveFigure):
         self.op=op
 
 
-
+class SSubInteractiveFigure(SubInteractiveFigure):
+    def __init__(self):
+         super().__init__()
+         self.btn_predict = widgets.Button(description = "预测", tooltip = 'this is a button')  
+         self.op.append(self.btn_predict)
